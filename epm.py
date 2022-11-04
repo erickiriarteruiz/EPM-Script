@@ -31,7 +31,7 @@ from PIL import Image
 icon_arriva = Image.open('Optibus icon.png')
 
 
-st.set_page_config(page_title='EPM Script73',layout='wide',page_icon=icon_arriva)
+st.set_page_config(page_title='EPM Script',layout='wide',page_icon=icon_arriva)
 
 # Hiding streamlit's footer and menu
 hide_streamlit_style = """

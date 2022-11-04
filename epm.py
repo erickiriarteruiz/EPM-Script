@@ -28,7 +28,7 @@ from numpy import nan
 ############################################################################################## PAGE CONFIGURATION ######################################################################################################################################################################################################
 
 
-st.set_page_config(page_title='EPM Script1',layout='wide')
+st.set_page_config(page_title='EPM Script',layout='wide')
 
 # Hiding streamlit's footer and menu
 hide_streamlit_style = """

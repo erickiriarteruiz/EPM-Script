@@ -8,6 +8,7 @@ from time import time
 start_time = time()
 from pandas import notna, read_csv, read_excel, DataFrame, ExcelWriter, concat, merge
 from numpy import nan
+from PIL import Image
 
 
 # Description: This script adds the district code into the EPM file from the stop catalogue 
@@ -27,8 +28,10 @@ from numpy import nan
 ########################################################################################################################################################################################################################################################
 ############################################################################################## PAGE CONFIGURATION ######################################################################################################################################################################################################
 
+icon_arriva = Image.open('Optibus icon.png')
 
-st.set_page_config(page_title='EPM Script',layout='wide')
+
+st.set_page_config(page_title='EPM Script',layout='wide',page_icon=icon_arriva)
 
 # Hiding streamlit's footer and menu
 hide_streamlit_style = """
@@ -42,6 +45,7 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 # # Logos
 # from PIL import Image
 # cola,colb,colc=st.columns(3)
+
 # image_arriva = Image.open('Arriva logo.png')
 # image_optibus = Image.open('Optibus logo.jpg')
 # cola.image(image_arriva,width=200)
